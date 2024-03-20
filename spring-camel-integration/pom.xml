@@ -71,6 +71,15 @@
       <artifactId>camel-stream-starter</artifactId>
     </dependency>
 
+    <dependency>
+    <groupId>org.apache.camel.springboot</groupId>
+    <artifactId>camel-jackson-starter</artifactId>
+  </dependency>
+    <dependency>
+      <groupId>org.apache.camel.springboot</groupId>
+      <artifactId>camel-http-starter</artifactId>
+    </dependency>
+
     <!-- Test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>

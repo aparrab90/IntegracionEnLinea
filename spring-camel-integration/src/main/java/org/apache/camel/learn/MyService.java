@@ -15,5 +15,13 @@ public class MyService {
         return template.requestBody("direct:saludo",parametro).toString();
 
     }
+
+    @GetMapping(value = "/createperson")
+    public String createperson(){
+        return template.requestBody("direct:crearPersona","").toString();
+
+    }
+
+
     
 }

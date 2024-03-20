@@ -1,5 +1,8 @@
 E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\MyService.java
+E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\Components\CreatePersonProcesor.java
 E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\MyRouter.java
+E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\Components\Persona.java
 E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\MySpringBootApplication.java
 E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\MyBean.java
 E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\MySpringBean.java
+E:\IntegracionEnLinea\spring-camel-integration\src\main\java\org\apache\camel\learn\Components\PersonaRouter.java
