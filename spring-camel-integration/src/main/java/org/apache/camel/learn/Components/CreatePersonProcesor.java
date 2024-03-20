@@ -8,9 +8,10 @@ public class CreatePersonProcesor implements Processor{
     public void process(Exchange exchange) throws Exception{
         Persona nueva = new Persona();
         nueva.setCodigo(1);
-        nueva.setIdentificacion("1234567890");
-        nueva.setNombres("Carlos Parra");
-        nueva.setDireccion("Secap");
+        nueva.setIdentificacion("9");
+        nueva.setNombres("Monica Bagua");
+        nueva.setDireccion("Centenario Sur");
+        nueva.setFormaPago("digital"); // o "presencial", según tu lógica de negocio
         exchange.getIn().setBody(nueva);
 
 
