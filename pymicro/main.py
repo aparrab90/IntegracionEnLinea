@@ -1,28 +1,35 @@
 import json
-from flask import Flask, jsonify, request, abort
+from flask import Flask, jsonify, request, abort,render_template
 
 app = Flask(__name__)
 
 data = [ {
-    "codigo": 12345,
-    "identificacion": "098765432",
-    "nombre":"Angel Parra",
-    "direccion":"Guayaquil"
+    "codigo": 2603,
+    "identificacion": "0928551803",
+    "nombres":"Angel Parra",
+    "direccion":"Guayaquil",
+    "formaPago":"canales_digitales"
 },
 {
     "codigo": 456789,
     "identificacion": "055555555",
-    "nombre":"Emanuel Parra",
-    "direccion":"Duran"
+    "nombres":"Aaron Parra",
+    "direccion":"Duran",
+    "formaPago":"canales_digitales"
 }]
 
-@app.route('/persons',methods= ['GET'])
+@app.route('/canales_digitales',methods= ['GET'])
 def retunpersonas():
     if(request.method =='GET'):
         return jsonify(data)
+
+@app.route('/canales_digitales_html', methods=['GET'])
+def return_personas_html():
+    if request.method == 'GET':
+        return render_template('personas.html', personas=data)
     
 
-@app.route('/persons/<int:codigo>',methods = ['GET'])
+@app.route('/canales_digitales/<int:codigo>',methods = ['GET'])
 def retunpersona(codigo):
     if(request.method =='GET'):
         for person in data:
@@ -30,7 +37,7 @@ def retunpersona(codigo):
                 return jsonify(person)
         abort(404)
 
-@app.route('/persons',methods= ['POST'])
+@app.route('/canales_digitales',methods= ['POST'])
 def addpersona():
     if((request.method=='POST')and(request.headers.get('Content-Type')=='application/json')):
         person = request.json

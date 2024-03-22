@@ -9,46 +9,29 @@ public class PersonaRouter extends RouteBuilder {
 
     JacksonDataFormat jsonDataFormat = new JacksonDataFormat(Persona.class);
 
-    
-
-
     @Override
     public void configure() throws Exception{
-        /*from("direct:crearPersona")
-        .routeId("CrearPersona")
-        .log("Antes de procesar: ${body.class}")
-        .process(new CreatePersonProcesor())
-        .log("Después de procesar: ${body.class}")
-        .marshal(jsonDataFormat)
-        .to("rest:post:/persons?host=localhost:5000")
-        .to("log:CREATE")
-        .log("Tipo del cuerpo antes de acceso a formaPago: ${body.class}");*/
-
         from("direct:crearPersona")
         .routeId("CrearPersona")
-        .log("Antes de procesar: ${body.class}")
+        .log("Antes de procesar: ${body.class} -")
         .process(new CreatePersonProcesor())
-        .log("Después de procesar: ${body.class}")
-        // Utiliza choice para tomar decisiones basadas en formaPago
-        .choice()
-        .when(simple("${body.formaPago} == 'digital'"))
-        .log("Forma de pago es digital. Enviando a localhost:5000")
-        .marshal(jsonDataFormat) // Serializa aquí porque sabes la próxima ruta
-        .to("rest:post:/persons?host=localhost:5000")
-        .when(simple("${body.formaPago} == 'presencial'"))
-        .log("Forma de pago es presencial. Enviando a localhost:5001")
-        .marshal(jsonDataFormat) // Serializa aquí porque sabes la próxima ruta
-        .to("rest:post:/persons?host=localhost:5001")
-        .otherwise() // Opcional: manejar casos que no cumplen las condiciones anteriores
-        .log("Forma de pago no identificada. Se requiere revisión.")
-        // Fin del choice
+        .split().body() 
+            .log("Procesando: ${body}")
+            .choice()
+                .when(simple("${body.formaPago} == 'canales_digitales'"))
+                    .log("Canal digital. Enviando a la EMPRESA 123 pymicro:5000")
+                    .marshal(jsonDataFormat)
+                    .to("rest:post:/canales_digitales?host=pymicro:5000")
+                .when(simple("${body.formaPago} == 'canales_presenciales'"))
+                    .log("Canal presencial. Enviando a la EMPRESA ABC netmicro:80")
+                    .marshal(jsonDataFormat)
+                    .to("rest:post:/CanalesPresenciales?host=netmicro:80")
+                .otherwise()
+                    .log("Forma de pago no identificada. Se requiere revisión.")
+            .end()
         .end()
-        .to("log:CREATE")
-        .log("Fin del procesamiento de crearPersona.");
-
-
-
-        
+        .log("Fin del procesamiento de crearPersona");
     }
+    
     
 }

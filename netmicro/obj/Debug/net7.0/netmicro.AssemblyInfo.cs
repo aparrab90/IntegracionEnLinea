@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("d77ce394-d671-4053-bddf-789eee0ecc4f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("netmicro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5610187b49d0694a192cf80f4e0e2d8dce7ef23e")]
 [assembly: System.Reflection.AssemblyProductAttribute("netmicro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("netmicro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

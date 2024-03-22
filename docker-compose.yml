@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  web:
+  pymicro:
     build: ./pymicro
     ports:
       - "5000:5000"
@@ -8,3 +8,19 @@ services:
       - ./pymicro:/usr/src/app
     environment:
       - FLASK_ENV=development
+
+  netmicro:
+    build: ./netmicro
+    ports:
+      - "5056:80" # Mapeo para tráfico HTTP
+    volumes:
+      - ./netmicro:/usr/src/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  javamicro:
+    build: ./spring-camel-integration
+    ports:
+      - "8080:8080" 
+    environment:
+      - JAVA_OPTS=-Dspring.profiles.active=dev

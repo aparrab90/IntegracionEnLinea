@@ -1,16 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "h3xYJOQL8Nuk2aDOpBqU24ln6oTkOTxPU7mSe7TuSyzdnI+AzR1jGS8tHCthbqjR7NxsPOKCRVbk504RfdtdKQ==",
+  "dgSpecHash": "tbK9lxbD2tT7PrDgFQ1eSkFQo9wkeHdvwHWcpKJ5wj4Fb5AXeIlYvZMwLkv52/E9p4Eb7ySLGB8o3iZivwyDhA==",
   "success": true,
   "projectFilePath": "E:\\IntegracionEnLinea\\netmicro\\netmicro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\aparrab\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\aparrab\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\aparrab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "C:\\Users\\aparrab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "C:\\Users\\aparrab\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512",
+    "C:\\Users\\aparrab\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.9\\microsoft.netcore.app.host.win-x64.7.0.9.nupkg.sha512"
   ],
   "logs": []
 }

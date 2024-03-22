@@ -1,0 +1,12 @@
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\netmicro.exe
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\appsettings.Development.json
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\appsettings.json
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\netmicro.dll
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\netmicro.deps.json
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\netmicro.runtimeconfig.json
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\netmicro.pdb
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\Microsoft.AspNetCore.OpenApi.dll
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\Microsoft.OpenApi.dll
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\IntegracionEnLinea\netmicro\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

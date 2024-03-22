@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Personas</title>
+</head>
+<body>
+    <h1>Personas</h1>
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Forma de Pago</th>
+        </tr>
+        {% for persona in personas %}
+        <tr>
+            <td>{{ persona.codigo }}</td>
+            <td>{{ persona.identificacion }}</td>
+            <td>{{ persona.nombres }}</td>
+            <td>{{ persona.direccion }}</td>
+            <td>{{ persona.formaPago }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
