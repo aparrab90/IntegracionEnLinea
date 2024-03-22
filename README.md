@@ -30,10 +30,24 @@ Además, se utiliza un `docker-compose.yml` para definir y ejecutar todos los se
 
 
 ## Instrucciones de Ejecución
+``Todo esto es `código`. ``
 
 ## Docker Compose
 
 Para iniciar los servicios, navegue al directorio donde se encuentra el archivo `docker-compose.yml` y ejecute:
 
-```bash
-docker-compose up -d
+``docker-compose up -d``
+
+### Luego verifica los servicios levantados entrando a los link
+
+Servicio de pymicro para la empresa 123
+- `http://localhost:5000/canales_digitales`
+
+Servicio de netmicro para la empresa ABC
+- `http://localhost:5056/CanalesPresenciales`
+
+Servicio de javamicro para la empresa XYZ encargado de crear a las personas o clientes y asignarlos al servicio correcto 
+- `http://localhost:8080/createperson`
+
+
+
