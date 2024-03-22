@@ -30,7 +30,6 @@ Además, se utiliza un `docker-compose.yml` para definir y ejecutar todos los se
 
 
 ## Instrucciones de Ejecución
-``Todo esto es `código`. ``
 
 ## Docker Compose
 
@@ -38,7 +37,7 @@ Para iniciar los servicios, navegue al directorio donde se encuentra el archivo 
 
 ``docker-compose up -d``
 
-### Luego verifica los servicios levantados entrando a los link
+### Verificación de los servicios
 
 Servicio de pymicro para la empresa 123
 - `http://localhost:5000/canales_digitales`
@@ -46,8 +45,10 @@ Servicio de pymicro para la empresa 123
 Servicio de netmicro para la empresa ABC
 - `http://localhost:5056/CanalesPresenciales`
 
-Servicio de javamicro para la empresa XYZ encargado de crear a las personas o clientes y asignarlos al servicio correcto 
+Servicio de javamicro para la empresa XYZ encargado de crear a las personas o clientes y asignarlos al servicio correcto (orquestador)
 - `http://localhost:8080/createperson`
 
+### Order de ejecuion
+En un navegador colocamos este link <http://localhost:8080/createperson> , el cual sera el encargado de redirigir a los clientes al servicio correspondiente a su forma de pago. Una vez finalizado el acceso al enlace se ingresa a los Servicio de pymicro para la empresa 123 <http://localhost:5000/canales_digitales> para ver los clientes asignados en los canales digitales y luego en los Servicio de netmicro para la empresa ABC <http://localhost:5056/CanalesPresenciales>
 
 
